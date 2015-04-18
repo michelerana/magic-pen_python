@@ -1,4 +1,4 @@
-from pen_person import *
+from pen_person import NormalPen, MagicPen, Person
 
 george = Person("George")
 bic = NormalPen()
