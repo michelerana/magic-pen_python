@@ -13,17 +13,6 @@ class MagicPen(Pen):
         self.magicText = magicText
         Pen.__init__(self)
 
-    @staticmethod
-    def toggleMagic():
-        if MagicPen.magicOn == 1:
-            MagicPen.magicOn = 0
-        else:
-            MagicPen.magicOn = 1
-
-    @staticmethod 
-    def isMagicOn():
-        return MagicPen.magicOn
-
     def getText(self, text):
         if MagicPen.magicOn != 0: 
             return self.magicText
